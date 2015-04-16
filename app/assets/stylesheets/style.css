@@ -1,0 +1,28 @@
+
+#map-canvas
+{
+	width : 100%;	
+	height: 1000px;	
+	margin: 0 auto;
+}
+
+.container_1160{
+	width: 1160px;
+	height:400px;
+	outline: dotted;
+}
+
+body {
+  padding-top: 50px;
+  margin: 0;
+  border: 0;
+}
+
+html{
+	margin: 0 auto;
+}
+.starter-template {
+  text-align: center;
+}
+
+

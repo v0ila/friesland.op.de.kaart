@@ -1,0 +1,30 @@
+
+<h1>Kaarten</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Naam</th>
+      <th>Beschrijving</th>
+      <th>Kaart</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+        <% @maps.each do |map| %>
+
+  <tbody>
+      <tr>
+        <td><%= map.name %></td>
+        <td><%= map.description %></td>
+        <td><%= map.picture %></td><br>
+        <td><%= link_to 'Bekijk', map %></td>
+        <td><%= link_to 'Aanpassen', edit_map_path(map) %></td>
+        <td><%= link_to 'Verwijderen', map, method: :delete, data: { confirm: 'Weet u het zeker?' } %></td><br>
+      </tr>
+  </tbody>
+</table>
+
+<br>
+<% end %>
+
+<h4><%= link_to 'Nieuwe kaart toevoegen', new_map_path %></h4>

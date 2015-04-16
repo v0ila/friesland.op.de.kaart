@@ -1,0 +1,5 @@
+<p>Hallo <%= @resource.email %>!</p>
+
+<p>Uw account is vergrendeld. </p>
+
+<p><%= link_to 'Ontgrendel mijn account', unlock_url(@resource, unlock_token: @token) %></p>

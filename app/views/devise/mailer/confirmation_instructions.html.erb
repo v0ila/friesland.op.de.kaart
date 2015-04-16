@@ -1,0 +1,5 @@
+<p>Welkom <%= @email %>!</p>
+
+<p>Klik op de onderstaande link om uw wachtwoord te bevestigen:</p>
+
+<p><%= link_to 'Bevestig mijn account', confirmation_url(@resource, confirmation_token: @token) %></p>

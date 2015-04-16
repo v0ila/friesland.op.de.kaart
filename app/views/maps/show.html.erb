@@ -1,0 +1,18 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @map.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @map.description %>
+</p>
+
+<p>
+  
+  <%= image_tag(@map.picture_url, :width => 600) if @map.picture.present? %>
+</p>
+
+<%= link_to 'Aanpassen', edit_map_path(@map) %> |
+<%= link_to 'Terug', maps_path %>
